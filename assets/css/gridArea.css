@@ -264,7 +264,7 @@ table {
     .nav .fotoPerfil{
         display: block;
         position: absolute;  
-        margin-top: 113px;
+        margin-top: 73px;
         left: 58%;
         width: 450px;
         height: 500px; 
@@ -305,7 +305,7 @@ table {
         display: block;
         text-align: center;
         margin-left: 10px;
-        margin-top: 150px;
+        margin-top: 100px;
     }
 
 
