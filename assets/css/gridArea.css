@@ -1,0 +1,312 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.header {grid-area: header;border: 1px solid red;}
+.nav{grid-area:nav; border: 1px solid red;}
+/* .section01{grid-area: section1;border: 1px solid red;} */
+.section1{grid-area: section1;border: 1px solid red;}
+.section2{grid-area: section2;border: 1px solid red;}
+.section3{grid-area: section3;border: 1px solid red;}
+.section4{grid-area: section4;border: 1px solid red;}
+.section5{grid-area: section5;border: 1px solid red;}
+.section6{grid-area: section6;border: 1px solid red;} 
+.footer{grid-area: footer;border: 1px solid red;}
+
+.main{  
+  background-color: #045273;
+  display: grid; 
+  row-gap: 3px;
+  column-gap: 3px;
+  grid-template-areas: 
+  'nav'
+  'header ' 
+  'section1' 
+  'section2' 
+  'section3' 
+  'section4' 
+  'section5' 
+  'section6' 
+  'footer' 
+  ;
+}
+
+.nav {
+    width: 290px;
+    height: 300px; 
+    margin: 0 auto;
+    background-image: url('../img/perfilClaro.png');
+    background-repeat: no-repeat;
+    background-position: cover;
+    margin-top: 10px;
+    background-color: #a6b5bc;
+}
+
+.nav .fotoPerfil{
+    display: none;
+}
+
+/* aqui é o About Me */
+.header{
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+
+.header h1{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(227, 222, 222);
+}
+
+.header p{
+    text-align: center;
+    padding: 10px; 
+    color: rgb(202, 169, 169);
+    font-weight: bold;
+    font-style: italic;
+    
+}
+
+.header .botoes, .mediaSocial{
+    display: none;
+}
+
+/* finalizado o header about Me */
+
+/* Section Projetos 1*/
+.section1, .section2, .section3, h3{
+    color: rgb(202, 169, 169);
+}
+.section1, .section2, .section3, p{
+    color: rgb(236, 230, 230);
+}
+
+.section1 .logoProjeto{  
+    width: 70px; 
+    margin: 0 auto;
+    margin-top: 10px; 
+    height: 70px;
+    margin-bottom: 15px;  
+}
+ 
+.section1  h3{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.section1 p{
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+   
+} 
+/* finalizado section projetos */
+
+
+/* Section Projetos2 */
+.section2 .logoProjeto{  
+    width: 70px; 
+    margin: 0 auto;
+    margin-top: 10px; 
+    height: 70px;
+    margin-bottom: 15px;
+    
+}
+.section2  h3{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.section2 p{
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    
+} 
+/* finalizado section projetos */
+
+
+/* Section Projetos2 */
+.section3 .logoProjeto{  
+    width: 70px; 
+    margin: 0 auto;
+    margin-top: 10px; 
+    height: 70px;
+    margin-bottom: 15px;
+    
+}
+.section3  h3{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.section3 p{
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    
+} 
+/* finalizado section projetos */
+
+@media only screen and (min-width: 600px) {
+    body{
+        background-color: #045273;
+    }
+    .header p{
+        color: rgb(176, 139, 139);
+    }
+
+    .header h1{
+        color: rgb(236, 236, 236);
+    }
+    .nav{
+        margin: 0 auto;
+        text-align: center;
+        background-position: cover bottom;
+        margin-top: 10px;
+        background-color: #a6b5bc;
+   }
+
+   
+
+
+   .header .botoes{
+    display: none;
+   }
+   .header .mediaSocial{
+    display: none;
+   }
+
+   .main{
+        grid-template-areas:  
+        'nav nav'
+        'header header'
+        'section1 section2' 
+        'section3 section4'
+        'section5 section6'
+        'footer footer' 
+        ;
+    } 
+}
+
+@media only screen and (min-width: 992px) { 
+    
+    .nav{
+        margin: 0px;
+        width: 50vw;
+        height: 100vh;
+    }
+    .header{
+        background-color: #045273;
+        margin-top: 0px;
+        width: 50vw;
+        height: 100vh;
+    }
+
+    .main{
+        grid-template-areas: 
+        'header header header nav nav nav'
+        'section1 section1 section2 section2 section3 section3' 
+        'section4 section4 section5 section5 section6 section6'
+        'footer footer footer footer footer footer ' 
+        ;
+    } 
+
+    .nav{
+       background-image: none; 
+       background-color: #a6b5bc;
+    }  
+
+    .nav .fotoPerfil{
+        display: block;
+        position: absolute;  
+        margin-top: 143px;
+        left: 58%;
+        width: 450px;
+        height: 500px; 
+        
+    }
+
+    .header h1{
+        font-size: 70px;
+        color: rgb(241, 241, 241);
+    }
+    .header p{
+        color: rgb(164, 154, 154);
+        margin-left: -270px;
+        margin-top: 240px;
+        font-weight: bold;
+    }
+
+    .header .botoes{
+        display: block;
+        text-align: center;
+    }
+
+    .header .botoes .btn{
+        width: 213px;
+        margin-left:5px ;
+        font-weight: bold;
+        font-size: 17px;
+        font-style: italic;
+        border: none;
+    }
+
+    .header .botoes .contactMe{
+        background-color: rgb(177, 67, 67);
+    
+    }
+
+    .header .mediaSocial{ 
+        display: block;
+        text-align: center;
+        margin-left: 10px;
+        margin-top: 180px;
+    }
+
+
+}
